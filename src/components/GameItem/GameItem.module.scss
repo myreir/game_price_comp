@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.game_item_display__container{
+
+  background: $bg2;
+  padding: 25%;
+  color: $bg3;
+
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  font-size: $small-font;
+
+
+  @include breakpoint(sm) {
+    font-size: $large-font;
+  }
+  @include breakpoint(md) {
+    font-size: $xlarge-font;
+  }
+  @include breakpoint(lg) {
+    font-size: $xxlarge-font;
+  }
+
+  & h1{
+    font-size: inherit;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}

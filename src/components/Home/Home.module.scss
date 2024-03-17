@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.main_container {
+
+  display: grid;
+  grid-template-rows: .25fr  1fr 1fr;
+  place-items: center; /* Centers both horizontally and vertically */
+
+  grid-row-gap: 15%;
+
+  color:$bg3;
+  height: 80vh;
+  margin-top: 25%;
+
+
+  @include breakpoint(sm){
+    margin-top: 5%;
+  }
+
+  &__data_display{
+    width: 90vw;
+
+    @include breakpoint(sm){
+      width: 60vw;
+    }
+
+    &__grid_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        font-size: $xxsmall-font;
+        color: $bg3;
+        place-items: center;
+        @include breakpoint(sm){
+          font-size: $small-font;
+        }
+    }
+
+  }
+
+}
+

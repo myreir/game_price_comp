@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Discover Your True Strength with the One-Rep Max Calculator",
+    "content": "This simple one-rep max calculator uses several formulas to give users a good estimate for their one-rep max for a particular exercise. The formulas generally give the user the same result; however, the formulas do diverge after ten reps. When training it is  generally considered best to always aim for a weight you can do for less than ten reps. If you can do a weight for more than ten reps, it is best to increase the weight to better calculate your one-rep max."
+  },
+  {
+    "title": "For Newer Lifters",
+    "content": "It may be best to use the smallest weight calculated by the formulas as your body has yet to adapt to the stress of heavy weight lifting. Using the lowest weight ensures safety and a gradual introduction to the demands of heavy lifting. The one rep max calculated is just an estimate, and safety should always be a top priority when lifting, so adequate warm-up and preparation are needed when attempting to one rep max."
+  },
+  {
+    "title": "For Advanced Lifters",
+    "content": "LIGHT WEIGHT BABY.... Epley's formula typically calculates the highest weight because it adds more weight for each additional rep, which is good for individuals who train at high intensity. Lombardi's formula raises the weight to the power of .10 times the number of reps. This formula is more sensitive to changes in the number of reps; which will be suitable for powerlifters as powerlifting trains at lower rep ranges. Wathan's formula has been praised for "
+  },
+  {
+    "title": "Formulas",
+    "content": "The formulas used are Epley, Brzynki, Adams, Baechle, Berger, Brown, Kemmler et al., Landers, Lombardi, Mayhews et al., Naclerio et al., O’Conner et al., and Wathens. None of these formulas are mine, and I do not claim to own any of them. I simply created this calculator for people to have access to a nice snappy calculator GUI and API that provides the outputs of all of these formulas. Please feel free to read more about formulas and their creators down below."
+  },
+  {
+    "title": "Support My Journey",
+    "content": "If you feel generous and want to get me a coffee or pre-workout, you can donate to my patron up above. I will be creating more projects related to weightlifting in the future and am currently creating something very exciting related to this calculator."
+  }
+]
