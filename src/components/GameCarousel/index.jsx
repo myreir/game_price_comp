@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import testImg from "../../../src/assets/halo.png"
 
 
-import testImg2 from "../../../src/assets/hello.png"
+import testImg2 from "../../assets/hello.png"
 
 
 import testImg3 from "../../../src/assets/banjo.png"

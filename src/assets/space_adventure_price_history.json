@@ -1,5 +1,6 @@
 {
     "game": "Space Adventure",
+    "gameID": 1234,
     "price_history": {
         "2020-01": {
             "Steam": 60.0,
