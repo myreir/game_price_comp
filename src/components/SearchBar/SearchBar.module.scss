@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+.searchbar{
+
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  width: 65vw;
+  font-size: $large-font;
+  border: 2px solid $bg3;
+  border-radius: .5rem;
+  //font-size: inherit;
+  color: white;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}

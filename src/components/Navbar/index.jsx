@@ -27,7 +27,7 @@ const Navbar = () => {
                             Store
                         </a>
 
-                        <a className={styles.nav__item} href = {"/strength-level"}>
+                        <a className={styles.nav__item} href = {"/about"}>
                             About
                         </a>
                         <a className={styles.nav__item} href = {"/donate"}>

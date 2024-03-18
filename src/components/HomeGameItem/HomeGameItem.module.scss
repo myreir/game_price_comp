@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.item_container{
+
+  display: grid;
+  grid-template-rows: 1fr .25fr;
+
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
+
+  &__prices{
+    display: grid;
+    background: $bg;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5%;
+
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+
+  }
+
+  img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+}

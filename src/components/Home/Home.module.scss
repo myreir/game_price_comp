@@ -1,42 +1,63 @@
 @import "../../styles/variables.scss";
 
-.main_container {
-
+.main_container{
+  margin: 5%;
   display: grid;
-  grid-template-rows: .25fr  1fr 1fr;
-  place-items: center; /* Centers both horizontally and vertically */
-
-  grid-row-gap: 15%;
+  grid-template-rows: .25fr  .75fr 1fr 1fr;
+  //grid-template-columns: 1fr;
 
   color:$bg3;
-  height: 80vh;
-  margin-top: 25%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  &__top_gallery{
+
+    width: 70vw;
+    &__items{
 
 
-  @include breakpoint(sm){
-    margin-top: 5%;
-  }
+      background-color: rgba(255, 255, 255, 0.03); /* White with 5% opacity */
+      border-radius: 20px;
 
-  &__data_display{
-    width: 90vw;
+      padding: 5%;
+      display: grid;
+      grid-template-columns: repeat(3, auto); /* Creates 3 columns of equal width */
+      grid-row-gap: 7%;
+      grid-column-gap: 5%;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
 
-    @include breakpoint(sm){
-      width: 60vw;
-    }
-
-    &__grid_container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        font-size: $xxsmall-font;
-        color: $bg3;
-        place-items: center;
-        @include breakpoint(sm){
-          font-size: $small-font;
-        }
     }
 
   }
+
+  //
+  //@include breakpoint(sm){
+  //  margin-top: 1%;
+  //}
+
+  //&__data_display{
+  //  width: 90vw;
+  //
+  //  //@include breakpoint(sm){
+  //  //  width: 60vw;
+  //  //}
+  //
+  //  &__grid_container{
+  //      display: grid;
+  //      grid-template-columns: repeat(3, 1fr);
+  //      grid-gap: 10px;
+  //      font-size: $xxsmall-font;
+  //      color: $bg3;
+  //      place-items: center;
+  //      @include breakpoint(sm){
+  //        font-size: $small-font;
+  //      }
+  //  }
+  //
+  //}
 
 }
 

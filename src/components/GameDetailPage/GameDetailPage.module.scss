@@ -1,0 +1,17 @@
+.main_container {
+  margin: 5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+
+  &__images{
+    img{
+      width: 450px;
+      height: 500px;
+      object-fit: cover;
+      background-color: rgba(255, 255, 255, 0.05); /* White with 5% opacity */
+
+    }
+  }
+
+}
