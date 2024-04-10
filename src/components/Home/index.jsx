@@ -2,7 +2,7 @@ import styles from "./Home.module.scss"
 import {useEffect, useState} from "react";
 // import testData from "../../../src/assets/content/test_data.json";
 
-import gameTestData from "../../assets/testData.json"
+import gameTestData from "../../assets/testData1.json"
 
 import GameItem from "../GameItem/index.jsx";
 import SearchBar from "../SearchBar/index.jsx";

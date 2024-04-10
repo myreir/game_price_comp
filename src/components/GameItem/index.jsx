@@ -2,7 +2,7 @@ import styles from "./GameItem.module.scss"
 
 import testImage from "../../assets/img.png"
 import {useEffect, useState} from "react";
-import gameTestData from "../../assets/testData.json";
+import gameTestData from "../../assets/testData1.json";
 function GameItem({gameTitle, prices}) {
 
 
