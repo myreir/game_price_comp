@@ -1,37 +1,21 @@
-import styles from "./GameItem.module.scss"
-
-import testImage from "../../assets/img.png"
-import {useEffect, useState} from "react";
-import gameTestData from "../../assets/testData1.json";
-function GameItem({gameTitle, prices}) {
-
-
-
-    const [priceData, setPriceData] = useState([]); // Updated this line
-
-    useEffect(() => {
-       setPriceData(prices)
-    }, []);
-
+import React from 'react';
+import styles from "./HomeGameItem.module.scss"
+import testImg2 from "../../assets/half.png";
+function HomeGameItem(props) {
     return (
-        <>
-            <div className={styles.game_item_display__container}>
-                <p>{gameTitle}</p>
+        <div className={styles.item_container}>
 
-                {console.log(priceData)}
+            <img src={testImg2} alt="Image 2" />
 
-                {priceData.map((data, index) =>(
-                    <div key = {index}>
-                        <p>{data.date}</p>
-                        {Object.entries(data.prices).map(([platform, price], index) => (
-                            <p key={index}>{platform}: ${price}</p>
-                        ))}
-                    </div>
-                ))}
-
+            <div className={styles.item_container__prices}>
+                <h3>Steam: 12.99</h3>
+                <h3>Amazon: 11.99</h3>
+                <h3>G2A: 10.99</h3>
             </div>
-        </>
+
+
+        </div>
     );
 }
 
-export default GameItem
+export default HomeGameItem;

@@ -59,11 +59,9 @@ function GameDetailPage(props) {
                 </div>
                 <div className={styles.main_container__prices__history}>
 
-
-
                     {
                         content.deals.map((deal, index) => (
-                            <div className={styles.main_container__prices__history__stores} key={deal.dealID}>
+                            <div  className={styles.main_container__prices__history__stores} key={deal.dealID}>
                                 <div>Store ID: {deal.storeID}</div>
                                 <div>Date: {deal.date.join('-')}</div>
                                 <div>Price: ${deal.price}</div>
@@ -71,28 +69,6 @@ function GameDetailPage(props) {
                                 <div>Savings: {deal.savings.toFixed(2)}%</div>
                             </div>
                         ))}
-
-
-                        {/*// content.price_history.map((entry, index) => (*/}
-                        {/*//     <div key = {index} className={styles.main_container__prices__history__stores}>*/}
-                        {/*//         <h1>{entry.date}</h1>*/}
-                        {/*//*/}
-                        {/*//         <div className={styles.main_container__prices__history__stores__prices}>*/}
-                        {/*//*/}
-                        {/*//             {*/}
-                        {/*//                 Object.entries(entry.prices).map(([platform, price]) => (*/}
-                        {/*//                     <h3 >*/}
-                        {/*//                         {platform}: {price}*/}
-                        {/*//                     </h3>*/}
-                        {/*//                 ))*/}
-                        {/*//             }*/}
-                        {/*//*/}
-                        {/*//         </div>*/}
-                        {/*//*/}
-                        {/*//     </div>*/}
-                        {/*// ))*/}
-                    }
-
 
                 </div>
 

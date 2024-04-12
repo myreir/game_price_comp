@@ -4,10 +4,9 @@ import {useEffect, useState} from "react";
 
 import gameTestData from "../../assets/testData1.json"
 
-import GameItem from "../GameItem/index.jsx";
 import SearchBar from "../SearchBar/index.jsx";
 import GameCarousel from "../GameCarousel/index.jsx";
-import HomeGameItem from "../HomeGameItem/index.jsx";
+import GameItem from "../GameItem/index.jsx";
 
 
 const Home = () => {
@@ -31,13 +30,13 @@ const Home = () => {
                 <div className={styles.main_container__top_gallery}>
                     <h1>TOP SELLERS</h1>
                     <div className={styles.main_container__top_gallery__items}>
-                        <HomeGameItem/>
-                        <HomeGameItem/>
-                        <HomeGameItem/>
+                        <GameItem/>
+                        <GameItem/>
+                        <GameItem/>
 
-                        <HomeGameItem/>
-                        <HomeGameItem/>
-                        <HomeGameItem/>
+                        <GameItem/>
+                        <GameItem/>
+                        <GameItem/>
                     </div>
                 </div >
 

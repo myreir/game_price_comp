@@ -6,7 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./components/Home/index.jsx";
 import About from "./components/About/index.jsx";
 import SearchBar from "./components/SearchBar/index.jsx";
-import GameDetailPage from "./components/GameDetailPage/index.jsx";
+import GameDetailPage from "./components/GameItemPage/index.jsx";
 
 function App() {
 
