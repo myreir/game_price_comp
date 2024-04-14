@@ -1,106 +1,50 @@
 @import "../../styles/variables.scss";
 .main_container {
-  margin-top: 5%;
-  display: grid;
-  //grid-template-rows: .15fr .85fr 1fr;
-
-  grid-row-gap: 1%;
-
-  color:$bg4;
-  width: 100%;
-
-
-
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-
-  &__images{
-    width: 100%;
+  margin-top: 100px;
+  color: $bg4;
+ 
+  &__images {
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.5%;
-    img{
+    img {
       width: 375px;
       height: 500px;
       object-fit: cover;
-      background-color: rgba(255, 255, 255, 0.05); /* White with 5% opacity */
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
   }
 
-  &__prices{
-
-    width: 100%;
-
-    background-color: rgba(255, 255, 255, 0.03); /* White with 5% opacity */
+  &__prices {
     border-radius: 20px;
-
-
-    //justify-content: center;
-    //align-items: center;
-    //justify-items: center;
-    //padding: 5%;
-
-
-    &__headers{
-      display:flex;
-      justify-content: center;
+    
+    &__headers {
+      display: flex;
+      justify-content: space-evenly;
       align-items: center;
-      flex-direction: row;
-      //color: $bg3;
-      grid-column-gap: 5%;
+      width: 100%;
+      text-align: center;
     }
 
-    &__history{
+    &__history {
       display: grid;
-      grid-row-gap: 5%;
-
-
-
-      align-items: center;
-      justify-items: center;
-
-      height: 100vh;
-
-      //display:flex;
-      //color: $bg3;
-      //grid-column-gap: 10%;
-
-      &__stores{
-        display:flex;
-        //justify-content: center;
+      grid-row-gap: 0px;
+      
+      &__stores {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         align-items: center;
-        flex-direction: row;
-
-
-
-        padding: 2%;
-
-        //color: $bg3;
-        grid-column-gap: 10%;
-        width: 60%;
-
-        background-color: rgba(118, 171, 174, 0.4); /* White with 5% opacity */
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgba(64, 68, 75, 0.4);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 20px;
-
-
-        &__prices{
-          display: grid;
-          grid-template-rows: auto auto auto;
-        }
-
-
+        text-align: center;
+        
+        
       }
-
-
     }
-
-
-
   }
-
 }

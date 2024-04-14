@@ -23,7 +23,7 @@
       padding: 5%;
       display: grid;
       grid-template-columns: repeat(3, auto); /* Creates 3 columns of equal width */
-      grid-row-gap: 7%;
+      grid-row-gap: 5%;
       grid-column-gap: 5%;
       justify-content: center;
       align-items: center;
@@ -49,11 +49,11 @@
   //      display: grid;
   //      grid-template-columns: repeat(3, 1fr);
   //      grid-gap: 10px;
-  //      font-size: $xxsmall-font;
+  //      //font-size: $xxsmall-font;
   //      color: $bg3;
   //      place-items: center;
   //      @include breakpoint(sm){
-  //        font-size: $small-font;
+  //        //font-size: $small-font;
   //      }
   //  }
   //

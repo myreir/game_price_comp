@@ -1,193 +1,60 @@
-@import "../../styles/variables.scss";
-.navbar{
-  height: $header-height;
-  background: $bg;
-  color:white;
-  position:fixed;
-  z-index: 1000;
-  width: 100vw;
-  box-shadow: 0 1px 5px $primary;
-  top:0;
-  left: 0;
-  //right:0;
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  //font-family: 'Rochester', cursive;
-  //font-size: 30px;
+//assuming you import Bulma in your main style file or here
+@import 'bulma';
 
-  @include breakpoint(sm) {
-    font-size: $medium-font;
-  }
+//override Bulma variables here if needed
+//example, setting primary color or font
+$family-primary: 'Libre Baskerville', serif;
+$primary: #3273dc;  //bulma's default blue, replace with your color
 
-  @include breakpoint(md) {
-    font-size: $large-font;
-  }
+.navbar {
+    background-color: $bg;
+    color: white;
 
-  @include breakpoint(lg) {
-    font-size: $xlarge-font;
-  }
+    //bulma uses are-light for Navbar items, you may want to customize it
+    .navbar-item {
+        color: white;
 
-
-  .link{
-    text-decoration: none;
-    font-size: $small-font;
-    align-items: center;
-    display: flex;
-    & > span{
-      font-size: $large-font;
-    }
-    & > img{
-      width: 15%;
-
+        &:hover, &:focus {
+            color: $primary;
+            background-color: transparent;  //removes Bulma's default hover background
+        }
     }
 
+    .navbar-burger {
+        color: white;
 
-  }
+        //change burger icon color on active/hover
+        &:hover, &.is-active {
+            background-color: transparent;
+        }
 
-  &__content{
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 $spacing-sm;
-    @include breakpoint(md){
-      padding: 0 $spacing-lg;
+        span {
+            background-color: white;
+        }
     }
-    transition: .3s ease paddding;
 
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-
-
-
-    & > div{
-      flex: 1;
-      white-space: nowrap;
-
-      &:nth-child(2){
-        display: flex;
-        justify-content: center;
-        height: 100%;
-      }
-      &:last-of-type{
-        display: flex;
-        justify-content: center;
-      }
+    //custom styles for your logo or other specific navbar branding
+    .navbar-brand .navbar-item {
+        font-family: $family-primary;
+        font-weight: bold;
     }
-  }
-  &__button__container{
-    display: none;
-    @include breakpoint(md){
-      display: initial;
-    }
-  }
-  &__toggler{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    @include breakpoint(md){
-      display: none;
-    }
-    & > svg{
-      display: block;
-      width: 100%;
-      height: auto;
-      font-size: 32px;
-    }
-  }
 }
 
-.logo{
-  //font-size: 40px !important;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-
-  @include breakpoint(sm) {
-    font-size: $medium-font !important;
-  }
-
-  @include breakpoint(md) {
-    font-size: $large-font !important;
-  }
-
+//responsive adjustments if needed
+@include mobile {
+    .navbar {
+        //specific mobile styles
+    }
 }
 
-.nav{
-
-  width:100%;
-  position:fixed;
-  top:$header-height;
-  right:-100%;
-  background: rgba($bg, 0.8);
-  text-align: center;
-  padding: $spacing-md 0;
-  &--open{
-    transition: .2s ease right;
-    right:0;
-  }
-
-  &__item{
-    display: block;
-    padding: $spacing-md;
-
-    text-decoration: none;
-    color: inherit;
-    height:100%;
-
-    transition: 0.3s ease color;
-    &:hover{
-      color: $primary;
+@include tablet {
+    .navbar {
+        //specific tablet styles
     }
-
-  }
-  @include breakpoint(md){
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background: initial;
-    width: auto;
-    padding: 0;
-    &__item{
-      padding: 0 $spacing-lg;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  &__button__container{
-    @include breakpoint(md){
-      display: none;
-    }
-    padding: $spacing-md;
-
-  }
-
-
 }
 
-
-.button{
-  font-weight: 500;
-  color: $bg2;
-  border:2px solid $primary;
-  padding: $spacing-sm $spacing-lg;
-  border-radius: $spacing-sm / 2 ;
-  cursor: pointer;
-
-  box-shadow: 0 0 0.5em 0 $primary;
-
-  &:active{
-    transform: scale(.98);
-    border-radius: 0;
-  }
-  &:hover{
-    box-shadow: 0 0 0.75em 0 $primary;
-  }
-
+@include desktop {
+    .navbar {
+        //desktop-specific styles
+    }
 }
-
-
-

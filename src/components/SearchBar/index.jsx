@@ -11,7 +11,7 @@ function SearchBar({ onSearch }) {
 
     return (
         <input
-            className={styles.searchbar}
+            className={"container "+styles.searchbar}
             type="text"
             placeholder="Search..."
             value={query}
