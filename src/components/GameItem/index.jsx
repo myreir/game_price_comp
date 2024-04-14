@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import styles from "./HomeGameItem.module.scss"
 import testImg2 from "../../assets/half.png";
 function HomeGameItem(props) {
     return (
         <div className={styles.item_container}>
 
-            <img src={testImg2} alt="Image 2" />
 
+            <h2>{props.item.title}</h2>
+            <Link to = {`/game_item/${props.item.steamAppID}`}>
+            <img src={testImg2} alt="Image 2" />
+            </Link>
             <div className={styles.item_container__prices}>
-                <h3>Steam: 12.99</h3>
-                <h3>Amazon: 11.99</h3>
-                <h3>G2A: 10.99</h3>
+
+                {
+                    props.item.deals.map(deal => <h3>{deal.storeID}: {deal.price}$</h3>)
+                }
             </div>
 
 
